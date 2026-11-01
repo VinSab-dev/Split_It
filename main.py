@@ -28,15 +28,6 @@ def split(cost):
     for i in range(k):
         owed[i] = (total / k) - cost[i]
 
-
-
-    '''for i in range(k):
-        avg = cost[i]// k
-        take = -1*avg*(k-1)
-        owed[i] += take
-        for j in range(k):
-            if i != j :
-                owed[j] += avg'''
     print(owed)
     settle(owed)
 
